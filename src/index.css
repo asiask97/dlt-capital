@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=Rubik:wght@600&display=swap');
+/*
+font-family: 'Plus Jakarta Sans', sans-serif; 300 400 700
+font-family: 'Rubik', sans-serif; 600
+*/
+:root{
+    --colorOne: rgba(7, 3, 59, 1);
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 2vw;
+}
+
+body{
+    background-color: black;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    box-sizing: border-box;
+    margin:0;
+}

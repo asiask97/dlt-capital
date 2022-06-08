@@ -1,0 +1,15 @@
+.Contact_Us{
+    margin-top: 150px;
+}
+.Contact_Us .contact_heading, .Contact_Us h1, .Contact_Us p{
+    margin: 0px;
+}
+
+.Contact_Us .contact_heading{
+    position: relative;
+    top:0.5em;
+}
+
+.Contact_Us .form_body{
+    background-color: white;
+}
