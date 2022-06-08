@@ -1,4 +1,5 @@
 .MainContent{
+    margin-top: 6em;
     display: grid;
     grid-template-columns: 10% 80% 10%;
     line-height: 1.2em;    
@@ -47,10 +48,6 @@
     border-right: 1px solid white ;
 }
 
-.MainContent .services .services_point2{
-
-}
-
 .MainContent .more_info{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -66,9 +63,6 @@
 }
 
 
-
-
-
 /*==========  Mobile First   ==========*/
 
 /* Small Devices, Tablets */
@@ -80,33 +74,6 @@
         font-size: 0.7em;
     }
     
-    .MainContent .more_info{
-        grid-template-columns: 24% 24% 24% 24%;
-        column-gap: 1%;
-    }
-    .MainContent .more_info h4{
-        grid-column-start: 1;
-        grid-column-end: 5;
-    }
-    .MainContent .more_info p{
-        margin: 0;
-        font-size: 0.5em;
-        line-height: normal;
-    }
-    .MainContent .more_info h5{
-        margin: 0;
-        font-size: 0.7em;
-    }
-    .MainContent .more_info .more_info_points{
-        border-right:1px solid white;
-        justify-items: center;
-    }
-    .MainContent .more_info .more_info_points:last-child{
-        border:none;
-    }
-    .MainContent .more_info h5{
-        border: none;
-    }
 }    
 
 /* Medium Devices, Desktops */
@@ -119,7 +86,6 @@
     .MainContent{
         justify-items: center;
         line-height: 62px;   
- 
     }
     .MainContent h4 {
         font-size: 50px;
@@ -127,14 +93,8 @@
     .MainContent p{
         font-size: 30px;
     }
-    .MainContent .WeAre, .MainContent .services, .MainContent .more_info{
+    .MainContent .WeAre, .MainContent .services{
         max-width: 1040px;
     }
 
-    .MainContent .more_info h5{
-        font-size: 30px;
-    }
-    .MainContent .more_info p{
-        font-size: 20px;
-    }
 }
