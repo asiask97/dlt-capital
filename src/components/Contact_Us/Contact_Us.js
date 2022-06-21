@@ -17,7 +17,7 @@ function Contact_Us() {
                 <div className='contact_Info'>
                     <div className='contact_email_container'>
                         <img src={email} alt='icon of email'></img>
-                        <p>info@dltcapital.com</p>
+                        <p>info@dltcapital.ie</p>
                     </div>
                     <div className='contact_linkedin_container'>
                         <img src={linkedIn} alt='icon of linkedIn'></img>

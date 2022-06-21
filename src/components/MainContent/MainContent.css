@@ -78,6 +78,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    .MainContent{
+        margin-top: 3em;  
+    }
 }
 
 /* Large Devices, Wide Screens */
