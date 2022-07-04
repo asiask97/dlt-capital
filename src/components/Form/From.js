@@ -9,8 +9,9 @@ function Form() {
   const [message, setMessage] =useState('');
   const [alert, setAlert] = useState('');
   const [isVerified, setIsVerified] = useState(false);
-  const url = 'https://9a7gbb174a.execute-api.eu-west-1.amazonaws.com/dev/email/send'
+  const url = 'https://yzftdip992.execute-api.eu-west-1.amazonaws.com/dev/email/send'
   const recaptchaRef = useRef(null);
+
 
   //FORM
   const handleSubmit = e =>{
@@ -27,7 +28,6 @@ function Form() {
         email: email,
         content: message
       }
-      //send the message after recaptcha
         post(url, payload, function (err, res) {
           if (err) { return error(err) }
           success()
@@ -49,25 +49,8 @@ function Form() {
     req.send(JSON.stringify(body));
   }
 
-  function success () {
-    setAlert('Your message was send')
-    recaptchaRef.current.reset();
-      /*
-    submit.disabled = false
-    submit.blur()
-    form.name.value = ''
-    form.email.value = ''
-    form.content.value = ''*/
-  }
-  function error (err) {
-    setAlert('There was an error with sending your message - check if all information is correct')
-    recaptchaRef.current.reset();
-    //submit.disabled = false
-    console.log(err);
-  }
-
-  // RECAPTCHA
-  function verifyCallBack(e) {
+   // RECAPTCHA
+   function verifyCallBack(e) {
     console.log(e);
     
     const token = e;
@@ -75,7 +58,7 @@ function Form() {
 
     
     var req = new XMLHttpRequest();
-    req.open("POST", 'https://sej5gmey78.execute-api.eu-west-1.amazonaws.com/dev/post', true);
+    req.open("POST", 'https://yzftdip992.execute-api.eu-west-1.amazonaws.com/dev/post', true);
 
     req.addEventListener("load", function () {
       let response = JSON.parse(req.responseText)
@@ -84,35 +67,24 @@ function Form() {
     req.send(JSON.stringify(toSend));
     
   }
-  
-  
-  /*const verifyCallBack = async (e) =>{
-    console.log(e);
-    
-    const token = recaptchaRef.current.getValue();
+
+  function success () {
+    setAlert('Your message was send')
+    setEmail('');
+    setMessage('');
+    setName('');
     recaptchaRef.current.reset();
-    let config = {
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': '*',
-      }
-    }
-    await axios.post('https://7o6b2vzzx0.execute-api.eu-west-1.amazonaws.com/dev/post', {token}, config)
-    .then(res =>  console.log(res))
-    .catch((error) => {
-    console.log(error);
-    })
-}
-  function verifyCallBack(e){
-    console.log(e);
-    const token = captchaRef.current.getValue();
-    captchaRef.current.reset();
-    await axios.captcha(process.env.REACT_APP_API_URL, {token})
-        .then(res =>  setIsVerified(res))
-        .catch((error) => {
-        console.log(error);
-    })
-  }*/
+
+  }
+  function error (err) {
+    setAlert('There was an error with sending your message - check if all information is correct')
+    console.log(err);
+    recaptchaRef.current.reset();
+
+  }
+
+
+
   return (
     <div className='Form'>
         <div id="confirm_message">{alert}</div>   
