@@ -51,7 +51,6 @@ function Form() {
 
    // RECAPTCHA
    function verifyCallBack(e) {
-    console.log(e);
     
     const token = e;
     const toSend = {'token' : token};
@@ -128,7 +127,7 @@ function Form() {
           </textarea>
           <div className='recaptcha'>
             <ReCAPTCHA
-                sitekey='6Lejw3YgAAAAAKEnb6j9X0cktYVQNCzEfuMp3cMv'
+                sitekey='6LdJF8EgAAAAAGEUFE7yrkThps__XUU9MDjGP22z'
                 onChange={verifyCallBack}
                 ref={recaptchaRef}
             />
