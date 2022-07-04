@@ -20,8 +20,11 @@ function Contact_Us() {
                         <p>info@dltcapital.ie</p>
                     </div>
                     <div className='contact_linkedin_container'>
-                        <img src={linkedIn} alt='icon of linkedIn'></img>
-                        <p>LinkedIn</p>
+                        <a href='https://www.linkedin.com/' target="_blank" rel="noopener noreferrer">
+                            <img src={linkedIn} alt='icon of linkedIn'></img>
+                            <p>LinkedIn</p>
+                        </a>
+                        
                     </div>
                 </div>
             </div>

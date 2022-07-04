@@ -48,7 +48,7 @@
 }
 
 .Form .recaptcha{
-    margin-top: 50px;
+    margin-top: 1em;
     margin-bottom: 50px;
     grid-column-start: 2;
     grid-column-end: 3;

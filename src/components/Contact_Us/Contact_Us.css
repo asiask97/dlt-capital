@@ -35,11 +35,18 @@
 }
 .Contact_Us .contact_linkedin_container{
     padding-bottom: 50px;
+    margin-top: 1em;
 }
+.Contact_Us img{
+   top:3px;
+   position: relative;
+}
+
 .Contact_Us .contact_email_container, .Contact_Us .contact_linkedin_container{
     grid-column-start: 2;
     grid-column-end: 3;
 }
+
 
 /*==========  Mobile First   ==========*/
 
@@ -78,7 +85,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1300px) {
     .Contact_Us .contact_Info{
-        font-size: 0.3em;
+        font-size: 0.5em;
     }
 
 }
