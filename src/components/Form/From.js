@@ -51,8 +51,9 @@ function Form() {
 
    // RECAPTCHA
    function verifyCallBack(e) {
-    
+
     const token = e;
+    console.log(token)
     const toSend = {'token' : token};
 
     

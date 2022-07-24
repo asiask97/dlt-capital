@@ -1,6 +1,15 @@
 .App{
     font-size: 2em;
 }
+.App video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    filter: grayscale(100%) contrast(150%) brightness(50%) ;
+
+}
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1300px) {

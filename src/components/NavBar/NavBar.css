@@ -9,7 +9,7 @@
 }
 .NavBar .wrapper{
     /*background-color: var(--colorOne);*/
-    background-color: rgb(0, 0, 0);
+    background-color: transparent;
     transition: ease-in 0.5s;
     position: relative;
 
