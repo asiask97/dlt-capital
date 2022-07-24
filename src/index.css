@@ -10,6 +10,8 @@ font-family: 'Rubik', sans-serif; 600
 html{
     scroll-behavior: smooth;
     font-size: 2vw;
+    overflow: hidden !important; 
+
 }
 
 body{
@@ -19,4 +21,6 @@ body{
     color: white;
     box-sizing: border-box;
     margin:0;
+    overflow: hidden !important; 
+
 }

@@ -8,11 +8,13 @@ import video from '../../media/skyscraper.mp4'
 function App() {
   return (
     <div className="App">
-        
+        <div className='vidoWrapper'>
           <video autoPlay loop muted>
             <source src={video} type="video/mp4"/>
             Your browser does not support the video tag.
           </video>
+        </div>
+          
       <NavBar/>
       <MainContent/>
       <Contact_Us/>

@@ -1,12 +1,18 @@
 .App{
     font-size: 2em;
 }
-.App video {
+.App .vidoWrapper{
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
     width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.App video {
+    min-width: 100vw;
+    height: 110vh;
     filter: grayscale(100%) contrast(150%) brightness(50%) ;
 
 }
