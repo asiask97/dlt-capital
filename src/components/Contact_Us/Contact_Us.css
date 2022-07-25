@@ -28,6 +28,12 @@
    margin-right: 10px;
    height: 1em;
 }
+.Contact_Us .contact_linkedin_container a:focus{
+    color:#000;
+}
+.Contact_Us .contact_linkedin_container a:visited{
+    color:#000;
+}
 
 .Contact_Us .contact_email_container{
     border-top:1px solid rgb(206, 206, 206);
@@ -85,7 +91,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1300px) {
     .Contact_Us .contact_Info{
-        font-size: 0.5em;
+        font-size: 0.4em;
     }
 
 }

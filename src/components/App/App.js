@@ -14,7 +14,6 @@ function App() {
             Your browser does not support the video tag.
           </video>
         </div>
-          
       <NavBar/>
       <MainContent/>
       <Contact_Us/>
