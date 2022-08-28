@@ -5,12 +5,12 @@ function MainContent() {
     return (
       <div className="MainContent" id='MainContent' >
         <div className='WeAre'>
-            <h4>Who we are ?</h4>
+            <h4>Who we are </h4>
             <p> DLT Captial is a firm that specialises in high-speed technology solutions for hedge funds and liquidity providers using cryptocurrency exchanges.</p>
         </div>
         <div className='services'>
             <div className='services_mainText'>
-                <h4>What do you need?</h4>
+                <h4>What do you need</h4>
                 <p>Do you trade significant volumes on the main global exchanges?</p>
             </div>
             <div className='services_point1'>
