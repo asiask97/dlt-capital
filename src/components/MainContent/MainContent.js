@@ -20,6 +20,13 @@ function MainContent() {
                 <p>Technology optimisation can add 2 basis points to trading profitability</p>
             </div>
         </div>
+        <div className='services'>
+            <div className='services_mainText'>
+                <h4> <bold>CT Competition</bold></h4>
+                <p className='competition'>Take a look <a  href='https://ct-competition-2023.dltcapital.ie/'  target="_blank">HERE</a>                                                                      </p>
+
+            </div>
+        </div>
       </div>
     );
   }

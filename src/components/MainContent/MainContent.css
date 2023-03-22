@@ -62,6 +62,13 @@
     display: inline-block;
 }
 
+.MainContent a{
+    color: white;
+}
+
+.MainContent .competition{
+    width: 100vw;
+}
 
 /*==========  Mobile First   ==========*/
 
