@@ -6,7 +6,7 @@ function MainContent() {
       <div className="MainContent" id='MainContent' >
         <div className='WeAre'>
             <h4>Who we are </h4>
-            <p> DLT Captial is a firm that specialises in high-speed technology solutions for hedge funds and liquidity providers using cryptocurrency exchanges.</p>
+            <p> DLT Capital is a firm that specialize in high-speed technology solutions for hedge funds and liquidity providers using cryptocurrency exchanges.</p>
         </div>
         <div className='services'>
             <div className='services_mainText'>
@@ -17,7 +17,7 @@ function MainContent() {
                 <p>We can provide <strong>high-speed </strong> price feeds, <strong>lowest fees</strong> as well as <strong>high-speed order executions</strong>.</p>
             </div>
             <div className='services_point2'>
-                <p>Technology optimisation can add 2 basis points to trading profitability</p>
+                <p>Technology optimization can add 2 basis points to trading profitability</p>
             </div>
         </div>
         <div className='services'>
